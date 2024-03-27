@@ -1,16 +1,24 @@
-function consolecall() {
-    console.log('Hey Im alive!')
-   
+import mainpage from './main';
+
+function hello() {
+    console.log('hiya')
+
 }
 
-consolecall();
 
-function buttonListener() {
+
+
+
+function buttonSelection () {
     let buttons = document.querySelectorAll('button');
     buttons.forEach((e) => {
         e.addEventListener('click', () => {
-            console.log(e.innerHTML)})
-        });
-};
+            console.log(e.textContent);
+        } )
 
-buttonListener();
+    })
+}
+hello();
+
+buttonSelection();
+mainpage();

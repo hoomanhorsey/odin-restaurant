@@ -1,1 +1,1 @@
-console.log("Hey Im alive!"),document.querySelectorAll("button").forEach((e=>{e.addEventListener("click",(()=>{console.log(e.innerHTML)}))}));
+(()=>{"use strict";console.log("hiya"),document.querySelectorAll("button").forEach((e=>{e.addEventListener("click",(()=>{console.log(e.textContent)}))})),function(){const e=document.createElement("p");e.textContent="Restaurant Main Page Mother Fuckers!",document.querySelector("#content").appendChild(e)}()})();

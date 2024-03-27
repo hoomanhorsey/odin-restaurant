@@ -1,1 +1,1 @@
-console.log("Hey Im alive!");
+console.log("Hey Im alive!"),document.querySelectorAll("button").forEach((e=>{e.addEventListener("click",(()=>{console.log(e.innerHTML)}))}));

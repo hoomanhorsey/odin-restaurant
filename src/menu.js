@@ -67,14 +67,31 @@ addItemtoMenu(o);
 function displayMenu(menu) {
 
     console.log('called displaymnu')
-    
-    for (const item of menu) {
 
-    console.log(item);
+
+    let categoryState;
+    for (const item of menu) {
+    
+        if (categoryState !== item.category) {
+            categoryState = item.category
+            const categoryDiv = document.createElement('div');
+            categoryDiv.setAttribute('class', 'categoryDiv');
+            
+            categoryDiv.innerHTML = categoryState;
+    
+            element.appendChild(categoryDiv);
+    
+        }
+
+        console.log(categoryState)
+
+
+
+
         
     const displayItem = document.createElement('p');
           
-    displayItem.innerHTML= `<div> ${item.category} ---- <b>${item.dish}</b>, <br> ${item.description}</div>`;
+    displayItem.innerHTML= `<div> <b>${item.dish}</b>, <br> ${item.description}</div>`;
     displayItem.setAttribute('class', 'menuItem');
     element.appendChild(displayItem);
     }

@@ -1,3 +1,7 @@
+import './style.css';
+import vegImage from './veg.jpg'
+
+
 import main from './main.js';
 import menu from './menu.js';
 import about from './about.js';
@@ -9,14 +13,20 @@ function hello() {
 
 }
 
+// Add the image to our existing div.
+  const imageElement = document.createElement('div');
+    const myIcon = new Image();
+  myIcon.src = vegImage;
 
+  imageElement.appendChild(myIcon);
 
 function clearPage() {
     const content = document.querySelector('#content')
     content.textContent = '';
-
-
 }
+
+
+
 function buttonSelection () {
     let buttons = document.querySelectorAll('button');
     buttons.forEach((e) => {
@@ -38,13 +48,8 @@ function buttonSelection () {
                     break
                 default:
                     console.log('default - do I need some logic?')
-
-
-
             }
-            // if (e.textContent === 'Menu') {
-            //     menu();
-            // }
+   
         } )
 
     })

@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1 1 1 ;
+    background: url('./veg.jpg');
+}
+
+header {
+    padding: 10px;
+    align-items: center;
+}
+
+.title {
+    display: grid;
+    justify-content: center;
+    background-color: rgba(240, 255, 247, 0.692);
+ 
+    font-size: 5rem;
+
+    padding: 40px 0px;
+    margin: 0px 0px;
+    border-radius: 10px;
+   
+}
+
+
+nav {
+
+}
+
+
+button {
+    background-color: rgba(240, 255, 247, 0.692);
+    color: Black;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    border-width: 0px;
+
+    font-size: 1.3rem;
+
+
+  }
+
+  #content {
+    background-color: rgba(240, 255, 247, 0.692);
+
+  }

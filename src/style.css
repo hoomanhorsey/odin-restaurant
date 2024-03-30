@@ -6,7 +6,11 @@
 body {
     display: grid;
     grid-template-columns: 1 1 1 ;
+    justify-content: center;
     background: url('./veg.jpg');
+    background: url('./bistro10.jpeg');
+    background-position: center top;
+
 }
 
 header {
@@ -21,15 +25,13 @@ header {
  
     font-size: 5rem;
 
-    padding: 40px 0px;
+    padding: 30px 0px;
     margin: 0px 0px;
     border-radius: 10px;
    
 }
 
-
 nav {
-
 }
 
 
@@ -48,13 +50,30 @@ button {
 
   #content {
     background-color: rgba(240, 255, 247, 0.692);
+    border-radius: 10px;
+
 
   }
 
   .categoryDiv {
     font-size: 2rem;
+    padding: 10px
   }
 
   .menuItem {
     padding: 5px 15px;
+  }
+
+.about {
+  padding: 15px;
+}
+
+  .homeDiv {
+    display: grid;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .contact {
+    padding: 20px
   }

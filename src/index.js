@@ -2,7 +2,7 @@ import './style.css';
 import vegImage from './veg.jpg'
 
 
-import main from './main.js';
+import home from './home.js';
 import menu from './menu.js';
 import about from './about.js';
 import contact from './contact.js';
@@ -35,7 +35,7 @@ function buttonSelection () {
             clearPage();
             switch (e.textContent) {
                 case 'Home':                   
-                    main();
+                    home();
                     break;
                 case 'Menu':
                     menu();
@@ -57,4 +57,5 @@ function buttonSelection () {
 hello();
 
 buttonSelection();
+home();
 // mainpage();
